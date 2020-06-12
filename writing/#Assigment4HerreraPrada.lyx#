@@ -1,0 +1,870 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[usenames,dvipsnames]{pstricks} 
+\usepackage{epsfig} 
+\usepackage{pst-grad} 
+\usepackage[normal,flushleft]{threeparttable}
+% For gradients
+\usepackage{pst-plot} 
+\usepackage[nolists]{endfloat}
+\DeclareDelayedFloatFlavor{sidewaystable}{table}
+\usepackage{booktabs, multicol, multirow}
+\usepackage{authblk}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf2
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_title "Premium or penalty? Labor market returns to novice public sector teachers"
+\pdf_author "Juan Saavedra, Dario Maldonado, Lucrecia Santibañez, Luis Omar Herrera-Prada"
+\pdf_keywords " Returns of Education, Novice Teachers, Labor Market"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.54cm
+\topmargin 2.54cm
+\rightmargin 2.54cm
+\bottommargin 2.54cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+\size large
+LUIS OMAR HERRERA-PRADA
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\align center
+
+\series bold
+\size large
+(l.herreraprada@stud.uni-goettingen.de)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Assignment.
+ 4.
+\end_layout
+
+\begin_layout Section*
+\paragraph_spacing single
+\noindent
+
+\size normal
+Github repo and summary (worth 2 points)
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Create a new github repo named “RDD”.
+ Inside the RDD directory, put all the subdirectories we’ve discussed in
+ class.
+ Post the link to the repo so I can see it’s done as discussed.
+ Save the Hansen_dwi.dta file into your new /data subdirectory.
+ Note: The outcome variable is “recidivism” or “recid” which is measuring
+ whether the person showed back up in the data within 4 months.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+https://github.com/luomar/RDD.git
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RDD in GitHub
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Shura/Dropbox/phd/ResearchD/RDD/figures/Assigment4HerreraPrada12.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+Notes: The figure shows the new folders inside RDD
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+In the writing subdirectory, place your assignment.
+ For the first part, read Hansen’s paper in the articles directory of the
+ main class github entitled “Hansen AER”.
+ Briefly summarize this paper.
+ What is his question? What data does he use? What is his research design?
+ What does he find.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+dd
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\paragraph_spacing single
+\noindent
+
+\size normal
+Replication (worth 6 points).
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+In the United States, an officer can arrest a driver if after giving them
+ a blood alcohol content test they learn the driver had a BAC of 0.08 or
+ higher.
+ We will only focus on the 0.08 BAC cutoff.
+ We will be ignoring the 0.15 cutoff for all this analysis.
+ Create a dummy equaling 1 if bac1>= 0.08 and 0 otherwise in your do file
+ or R file.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+gen select=bac1>= 0.08
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+The first thing to do in any RDD is look at the raw data and see if there’s
+ any evidence for manipulation.
+ If people were capable of manipulating their blood alcohol content (bac1),
+ describe the test we would use to check for this.
+ Now evaluate whether you see this in these data? Recreate Figure 1 using
+ the bac1 variable as your measure of blood alcohol content.
+ Do you find evidence for sorting on the running variable? .
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Basically we have to look for a bumps before or after the cut line that
+ show manipulation.
+ In the replication the value to replicate the chart is width=.0001 no width=0.001
+ as showed in the paper.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Replica Figure 1- Hansen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Shura/Dropbox/phd/ResearchD/RDD/figures/BACHist.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+Replica from Hansen (2015).
+ Author chart is 
+\begin_inset Quotes eld
+\end_inset
+
+Based on administrative records from the Washington State Impaired Driver
+ Testing Program, 1999–2007.
+ The histogram height on the vertical axis is based on frequency of obser-
+ vations, with BAC on the horizontal axis.
+ The vertical black lines represent the two legal thresh- olds at 0.08 and
+ 0.15.
+ The bin width is 0.001, the original precision used on the breathalyzers.
+\begin_inset Quotes erd
+\end_inset
+
+ Hansen (2015).
+ However, there is a typo in the 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Calculate the simple difference in outcomes.
+ How similar is it to the ATE?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+First, I define 
+\begin_inset Formula $Y^{obs}=DY^{1}+\left(1-D\right)Y^{0}$
+\end_inset
+
+ .
+ Then, I estimate the SDO as the average, so 
+\begin_inset Formula $\bar{Y^{obs}}=7.5$
+\end_inset
+
+ It is not similar.
+ In fact, there is a big difference between both measures.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+Calculate the ATT and the ATU.
+ How similar are each of these to the SDO? How similar are each of these
+ to the ATE?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+So, if 
+\begin_inset Formula $D=1\Rightarrow ATT=E\left[Y^{1}|D=1\right]=8$
+\end_inset
+
+ & 
+\begin_inset Formula $D=0\Rightarrow ATU=E\left[Y^{0}|D=0\right]=7.1$
+\end_inset
+
+ .
+ SDO is a weighted (by the treatmen) average between ATT and ATU.
+ All of them are very different than ATE, they bias is evident.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+Show that the SDO is numerically equal to the sum of ATE, selection bias
+ and heterogeneous treatment effects bias.
+ You will need to calculate the ATE, selection bias and heterogenous treatment
+ effects bias, combine them in the appropriate way, and show that their
+ sum is equivalent to the SDO.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+So, we have to show that if 
+\begin_inset Formula $SDO=ATE+E\left[Y^{1}|D=0\right]-E\left[Y^{0}|D=0\right]+(1-\pi)(ATT-ATU)=0.9$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\paragraph_spacing single
+\noindent
+
+\size normal
+The following two questions ask you to estimate two regressions.
+ Report your results in a “beautiful table” labeled Table 1 with a simple
+ description based on parts (a) and (b).
+ You may use this opportunity to learn outreg2 
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Create a dataset based on the perfect doctor treatment assignment from part
+ (1).
+ This dataset should only contain D, Age and Y.
+ Then estimate the following equation: Y_i=α+δD_i+ ε_i Report the coefficient
+ on δ .
+ Is it equal to ATE, SDO, ATT or ATU? 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "../../causal-inference-LOH/Assigments/assignment_part1.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{6pt} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hangindent=1.25em
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize {
+\end_layout
+
+\begin_layout Plain Layout
+
+*** p$<$0.01, ** p$<$0.05, * p$<$0.1   }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is quite similar to SDO, as the simple regression estimate basically
+ the same average.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+Now run the following multivariate regression controlling for age Y_i=α+δD_i+βAg
+e+ ε_i Report the coefficient on δ.
+ Is it equal to ATE, SDO, ATT or ATU? Did controlling for age recover the
+ ATE? 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Not, it got closer but is not equal.
+ (see Table 1 eq 2)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+Create a separate table labeled Table 2.
+ This table should have three columns.
+ The first equation is the multivariate regression.
+ The second equation is the auxiliary regression of D onto Age.
+ The third equation regresses Y onto D ̃ which is the residual from the
+ second equation.
+ Compare the coefficient on D from the first equation to the coefficient
+ on D ̃ in the third equation.
+ What does this tell you about how to interpret multivariate regressions?
+ Y_i=α+δD_i+βAge+ ε_i , later D_i=β_0+γ_1 AGE_i+ ϵ_i and finally Y_i=α+δ
+ D ̃+ ϵ_i 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "../../causal-inference-LOH/Assigments/assignment_part2.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{6pt} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hangindent=1.25em
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize {
+\end_layout
+
+\begin_layout Plain Layout
+
+*** p$<$0.01, ** p$<$0.05, * p$<$0.1   }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Sometime sinclude a new variable seems to fix the estimation, but in fact
+ it it not contributing to the correct reading of the output.
+\end_layout
+
+\begin_layout Section*
+\paragraph_spacing single
+\noindent
+
+\size normal
+Directed a cyclical graphs
+\end_layout
+
+\begin_layout Standard
+This question is partly based on a 2005 article published in the Journal
+ of Behavioral Medicine that claimed forgiveness improved physical health
+ outcomes.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that we want to estimate the average causal effect of forgiveness
+ (D) on health (Y) using observational data.
+ Figure 1 represents our belief about how forgiveness and health are related
+ both in the sample and outside the sample.
+ 
+\end_layout
+
+\begin_layout Standard
+We believe that forgiveness (D) causes health (Y), but we only have data
+ on patients meeting with psychotherapists for mental health treatment (patients
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Individuals who are more open towards behavioral therapy in the first place
+ (openness) become patients (patients).
+ We believe these people are also more likely to forgive (D).
+ 
+\end_layout
+
+\begin_layout Standard
+Wealth is also important because wealth causes people to see a therapist
+ (patients) in part because of their higher willingness to pay for future
+ and present health.
+ Wealth also improves health outcomes.
+ Unfortunately wealth is not in your data.
+ Wealth is also associated with insurance coverage, which also causes people
+ see therapists (patients) and which affects health outcomes.
+ 
+\end_layout
+
+\begin_layout Standard
+And remember – we only have data on patients.
+ Our sample, in other words, consists only of patients.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Write down all backdoor paths between D and Y.
+ Mark whether they are open or closed.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In this case only insurance is a backdoor, could it be wealth if we have
+ the data, but assuming the dash lines that it is unobservable, it should
+ be insurance that is related with patients and health.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+What identification strategy would allow you to estimate the causal effect
+ of forgiveness on health? Assume you aren’t limited to merely data on patients.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+I would look for a variable that is related to health and forgiveness but
+ not with insurance or health.
+ Something like the kind of medication prescribed, asuming that age is related
+ to D, I would use age too.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+Now assume you only have data on patients.
+ Assume that forgiveness is binary and you calculate the following simple
+ difference in outcomes: Y=α+δD+γInsurance+ε But in this regression, you
+ only use data that you have on patients.
+ Will your estimate of δ identify the ATE? Why/why not? Your answer should
+ indicate whether this control strategy opened up in any backdoors or closed
+ any backdoors.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Yes it will work because we are conditioning by the back door that we have.
+ The estimation will be close to ATE.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Use Figure 2 for the following questions.
+ In all four DAGs (a-d), X is a binary treatment variable and Y is the outcome
+ variable, U and V are unobservable (apologies that they are not dashed
+ lines).
+ S, Z, X and Y are all observable (in your data).
+ For each DAG, answer the following three questions.
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Write down all backdoor paths from X to Y and indicate whether they are
+ open or closed.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In A, Z is the backdoor and it is closed.
+ In B, U and V are open and Z is close.
+ In C, U and is closed.
+ In D, there is not backdoor.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\shape italic
+Write down a conditioning strategy that satisfies the backdoor criterion.
+ If one does not exist, what is stopping it? 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In A, I will condition on and U.
+ Z is the backdoor and it is closed.
+ In B, i will condition by Z and V.
+ In C, the ocndition should be in U.
+ In D, there is not backdoor, i should not condition is direct.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
