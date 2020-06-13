@@ -166,13 +166,13 @@ https://github.com/luomar/RDD.git
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Titanic in GitHub
+RDD in GitHub
 \end_layout
 
 \end_inset
@@ -183,7 +183,7 @@ Titanic in GitHub
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../causal-inference-LOH/Assigments/Assigment4HerreraPrada12.pdf
+	filename /Volumes/Shura/Dropbox/phd/ResearchD/RDD/figures/Assigment4HerreraPrada12.pdf
 	scale 60
 
 \end_inset
@@ -215,7 +215,7 @@ footnotesize
 
 \begin_layout Plain Layout
 
-Notes: The figure shows the new folders inside Titanic
+Notes: The figure shows the new folders inside RDD
 \end_layout
 
 \begin_layout Plain Layout
@@ -253,7 +253,20 @@ In the writing subdirectory, place your assignment.
 
 \begin_deeper
 \begin_layout Standard
-dd
+This paper analize how driviers who have received punishment for being driving
+ under the influence (DUI) are less likely to reincid in tdriving drunk
+ as the higher their blood alcohol control (BAC) score was at the moment
+ of the penalty.
+ Hansen (2015) uses administrative records from the Washington State Impaired
+ Driver Testing Program, 1999–2007.
+ By using a regression discontinuity approach, Hansen (2015) analizes the
+ two BAC triggers cut-offs 0.08 and 0.015 into the reincidence of drunk drivers.
+ Hansen (2015) finds evidence that suggest the effectiveness of punishments
+ and sanctions in reducing recidivism among drunk drivers.
+ The paper also shows that having a BAC over the 0.15 ( the high cut-off)
+ reduces in 1 percentage point the probability of drink and drive again;
+ and if the punishment increases 10 percent then, the probability of being
+ drunk while driving fall 2.3.
 \end_layout
 
 \end_deeper
@@ -301,98 +314,425 @@ Basically we have to look for a bumps before or after the cut line that
  show manipulation.
  In the replication the value to replicate the chart is width=.0001 no width=0.001
  as showed in the paper.
+ There is not an evident manipulation or bump before the cut-off, after
+ the cut off is easy to see an small bump.
+ This is consistent with the value of the 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Replica Figure 1Hansen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Shura/Dropbox/phd/ResearchD/RDD/figures/BACHist.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+Replica from Hansen (2015).
+ Author chart is 
+\begin_inset Quotes eld
+\end_inset
+
+Based on administrative records from the Washington State Impaired Driver
+ Testing Program, 19992007.
+ The histogram height on the vertical axis is based on frequency of observations
+, with BAC on the horizontal axis.
+ The vertical black lines represent the two legal thresholds at 0.08 and
+ 0.15.
+ The bin width is 0.001, the original precision used on the breathalyzers.
+\begin_inset Quotes erd
+\end_inset
+
+ Hansen (2015).
+ However, there is a typo in the note from the chart.
+ Width needed to replicate is 0.0001 instead the  0.001 mentioned.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Manipulation test
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "/Volumes/Shura/Dropbox/phd/ResearchD/RDD/tables/assignment4_part21.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{6pt} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hangindent=1.25em
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize {
+\end_layout
+
+\begin_layout Plain Layout
+
+Manipulation test over 0.08.
+ We find evidence of manipulation at the cut-off.
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \shape italic
-Calculate the simple difference in outcomes.
- How similar is it to the ATE?
+The second thing we need to do is check for covariate balance.
+ Recreate Table 2 but only white male, age and accident (acc) as dependent
+ variables.
+ Use your equation (1) for this.
+ Are the covariate balanced at the cutoff? It’s okay if they are not exactly
+ the same as Hansen’s.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-First, I define 
-\begin_inset Formula $Y^{obs}=DY^{1}+\left(1-D\right)Y^{0}$
+With the results from eq (1) and (2) for males and withe, I found not relationsh
+ip with the treatment variable.
+ However, for age and accident I found a significant value for the treatment
+ variable what makes me think there is not independence using this covariates.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results
+\end_layout
+
 \end_inset
 
- .
- Then, I estimate the SDO as the average, so 
-\begin_inset Formula $\bar{Y^{obs}}=7.5$
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "/Volumes/Shura/Dropbox/phd/ResearchD/RDD/tables/assignment4_part22.tex"
+
 \end_inset
 
- It is not similar.
- In fact, there is a big difference between both measures.
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{6pt} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hangindent=1.25em
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize {
+\end_layout
+
+\begin_layout Plain Layout
+
+Regressions were estimated using database provided by Professor.
+ However, the sample to replicate table 2 from Hansen (2015) was not possible
+ to replicate.
+ Results shown are form the closest sample using only population with less
+ than 0.13 in the BAC score (0.08 + 0.05, according with the text from original
+ author).
+ *** p$<$0.01, ** p$<$0.05, * p$<$0.1   }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 
 \shape italic
-Calculate the ATT and the ATU.
- How similar are each of these to the SDO? How similar are each of these
- to the ATE?
+Recreate Figure 2 panel A-D.
+ You can use the -cmogram- command in Stata to do this.
+ Fit both linear and quadratic with confidence intervals.
+ Discuss what you find and compare it with Hansen’s paper.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-So, if 
-\begin_inset Formula $D=1\Rightarrow ATT=E\left[Y^{1}|D=1\right]=8$
-\end_inset
-
- & 
-\begin_inset Formula $D=0\Rightarrow ATU=E\left[Y^{0}|D=0\right]=7.1$
-\end_inset
-
- .
- SDO is a weighted (by the treatmen) average between ATT and ATU.
- All of them are very different than ATE, they bias is evident.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\shape italic
-Show that the SDO is numerically equal to the sum of ATE, selection bias
- and heterogeneous treatment effects bias.
- You will need to calculate the ATE, selection bias and heterogenous treatment
- effects bias, combine them in the appropriate way, and show that their
- sum is equivalent to the SDO.
+We are only analizing the 0.08 cut-off.
+ My results with the covariantas are similar to the ones of Hansen (2015).
+ There is not evidence of a jump caused because of the cut-off.
+ This allows us to continue with the RDD analizys.
  
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
-So, we have to show that if 
-\begin_inset Formula $SDO=ATE+E\left[Y^{1}|D=0\right]-E\left[Y^{0}|D=0\right]+(1-\pi)(ATT-ATU)=0.9$
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Replica Figure 2- Hansen
+\end_layout
+
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Shura/Dropbox/phd/ResearchD/RDD/figures/comb.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+Replica from Hansen (2015) Figure 2.
  
 \end_layout
 
-\end_deeper
-\begin_layout Section*
-\paragraph_spacing single
-\noindent
+\begin_layout Plain Layout
 
-\size normal
-The following two questions ask you to estimate two regressions.
- Report your results in a “beautiful table” labeled Table 1 with a simple
- description based on parts (a) and (b).
- You may use this opportunity to learn outreg2 
+
+\backslash
+end{tablenotes} 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 
 \shape italic
-Create a dataset based on the perfect doctor treatment assignment from part
- (1).
- This dataset should only contain D, Age and Y.
- Then estimate the following equation: Y_i=α+δD_i+ ε_i Report the coefficient
- on δ .
- Is it equal to ATE, SDO, ATT or ATU? 
+Estimate equation (1) with recidivism (recid) as the outcome.
+ This corresponds to Table 3 column 1, but since I am missing some of his
+ variables, your sample size will be the entire dataset of 214,558.
+ Nevertheless, replicate Table 3, column 1, Panels A and B.
+ Note that these are local linear regressions and Panel A uses as its bandwidth
+ 0.03 to 0.13.
+ But Panel B has a narrower bandwidth of 0.055 to 0.105.
+ Your table should have three columns and two A and B panels associated
+ with the different bandwidths.:
 \end_layout
 
 \begin_deeper
@@ -418,7 +758,7 @@ Results
 \align center
 \begin_inset CommandInset include
 LatexCommand input
-filename "../../causal-inference-LOH/Assigments/assignment_part1.tex"
+filename "/Volumes/Shura/Dropbox/phd/ResearchD/RDD/tables/assignment4_part41.tex"
 
 \end_inset
 
@@ -463,7 +803,8 @@ footnotesize {
 
 \begin_layout Plain Layout
 
-*** p$<$0.01, ** p$<$0.05, * p$<$0.1   }
+Regressions were estimated using database provided by Professor.
+   }
 \end_layout
 
 \begin_layout Plain Layout
@@ -488,45 +829,6 @@ end{tablenotes}
 \end_layout
 
 \begin_layout Standard
-This is quite similar to SDO, as the simple regression estimate basically
- the same average.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\shape italic
-Now run the following multivariate regression controlling for age Y_i=α+δD_i+βAg
-e+ ε_i Report the coefficient on δ.
- Is it equal to ATE, SDO, ATT or ATU? Did controlling for age recover the
- ATE? 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Not, it got closer but is not equal.
- (see Table 1 eq 2)
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\shape italic
-Create a separate table labeled Table 2.
- This table should have three columns.
- The first equation is the multivariate regression.
- The second equation is the auxiliary regression of D onto Age.
- The third equation regresses Y onto D ̃ which is the residual from the
- second equation.
- Compare the coefficient on D from the first equation to the coefficient
- on D ̃ in the third equation.
- What does this tell you about how to interpret multivariate regressions?
- Y_i=α+δD_i+βAge+ ε_i , later D_i=β_0+γ_1 AGE_i+ ϵ_i and finally Y_i=α+δ
- D ̃+ ϵ_i 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
@@ -536,7 +838,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Results 2
+Results
 \end_layout
 
 \end_inset
@@ -548,7 +850,7 @@ Results 2
 \align center
 \begin_inset CommandInset include
 LatexCommand input
-filename "../../causal-inference-LOH/Assigments/assignment_part2.tex"
+filename "/Volumes/Shura/Dropbox/phd/ResearchD/RDD/tables/assignment4_part42.tex"
 
 \end_inset
 
@@ -593,7 +895,8 @@ footnotesize {
 
 \begin_layout Plain Layout
 
-*** p$<$0.01, ** p$<$0.05, * p$<$0.1   }
+Regressions were estimated using database provided by Professor.
+   }
 \end_layout
 
 \begin_layout Plain Layout
@@ -618,158 +921,89 @@ end{tablenotes}
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-Sometime sinclude a new variable seems to fix the estimation, but in fact
- it it not contributing to the correct reading of the output.
-\end_layout
-
-\begin_layout Section*
-\paragraph_spacing single
-\noindent
-
-\size normal
-Directed a cyclical graphs
-\end_layout
-
-\begin_layout Standard
-This question is partly based on a 2005 article published in the Journal
- of Behavioral Medicine that claimed forgiveness improved physical health
- outcomes.
- 
-\end_layout
-
-\begin_layout Standard
-Assume that we want to estimate the average causal effect of forgiveness
- (D) on health (Y) using observational data.
- Figure 1 represents our belief about how forgiveness and health are related
- both in the sample and outside the sample.
- 
-\end_layout
-
-\begin_layout Standard
-We believe that forgiveness (D) causes health (Y), but we only have data
- on patients meeting with psychotherapists for mental health treatment (patients
-).
- 
-\end_layout
-
-\begin_layout Standard
-Individuals who are more open towards behavioral therapy in the first place
- (openness) become patients (patients).
- We believe these people are also more likely to forgive (D).
- 
-\end_layout
-
-\begin_layout Standard
-Wealth is also important because wealth causes people to see a therapist
- (patients) in part because of their higher willingness to pay for future
- and present health.
- Wealth also improves health outcomes.
- Unfortunately wealth is not in your data.
- Wealth is also associated with insurance coverage, which also causes people
- see therapists (patients) and which affects health outcomes.
- 
-\end_layout
-
-\begin_layout Standard
-And remember – we only have data on patients.
- Our sample, in other words, consists only of patients.
- 
-\end_layout
-
 \begin_layout Enumerate
 
 \shape italic
-Write down all backdoor paths between D and Y.
- Mark whether they are open or closed.
- 
+Recreate the top panel of Figure 3 according to the following rule: 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-In this case only insurance is a backdoor, could it be wealth if we have
- the data, but assuming the dash lines that it is unobservable, it should
- be insurance that is related with patients and health.
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fit Linear and Quadratic
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\end_inset
 
-\shape italic
-What identification strategy would allow you to estimate the causal effect
- of forgiveness on health? Assume you aren’t limited to merely data on patients.
- 
+
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-I would look for a variable that is related to health and forgiveness but
- not with insurance or health.
- Something like the kind of medication prescribed, asuming that age is related
- to D, I would use age too.
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Volumes/Shura/Dropbox/phd/ResearchD/RDD/figures/comb2.png
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
 
-\shape italic
-Now assume you only have data on patients.
- Assume that forgiveness is binary and you calculate the following simple
- difference in outcomes: Y=α+δD+γInsurance+ε But in this regression, you
- only use data that you have on patients.
- Will your estimate of δ identify the ATE? Why/why not? Your answer should
- indicate whether this control strategy opened up in any backdoors or closed
- any backdoors.
- 
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-Yes it will work because we are conditioning by the back door that we have.
- The estimation will be close to ATE.
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tablenotes}[para,flushleft] 
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-Use Figure 2 for the following questions.
- In all four DAGs (a-d), X is a binary treatment variable and Y is the outcome
- variable, U and V are unobservable (apologies that they are not dashed
- lines).
- S, Z, X and Y are all observable (in your data).
- For each DAG, answer the following three questions.
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Plain Layout
 
-\shape italic
-Write down all backdoor paths from X to Y and indicate whether they are
- open or closed.
- 
+Replica from Hansen (2015).
+ Database provided in class.
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-In A, Z is the backdoor and it is closed.
- In B, U and V are open and Z is close.
- In C, U and is closed.
- In D, there is not backdoor.
+\begin_layout Plain Layout
+
+
+\backslash
+end{tablenotes} 
 \end_layout
 
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Plain Layout
 
-\shape italic
-Write down a conditioning strategy that satisfies the backdoor criterion.
- If one does not exist, what is stopping it? 
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-In A, I will condition on and U.
- Z is the backdoor and it is closed.
- In B, i will condition by Z and V.
- In C, the ocndition should be in U.
- In D, there is not backdoor, i should not condition is direct.
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper

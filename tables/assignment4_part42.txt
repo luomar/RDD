@@ -1,0 +1,26 @@
+		(1)	(2)	(3)
+VARIABLES	LABELS	recidivism	recidivism	recidivism
+				
+bac1	bac1	-0.442***	-0.150	5.116
+		(0.112)	(0.383)	(8.133)
+1.select	select = 1		-0.062*	0.337
+			(0.035)	(0.423)
+0b.select#co.bac1			0.000	0.000
+			(0.000)	(0.000)
+1.select#c.bac1			0.523	-9.465
+			(0.450)	(10.623)
+bacsq	bacsq			-38.124
+				(58.838)
+0b.select#co.bacsq				0.000
+				(0.000)
+1.select#c.bacsq				63.419
+				(69.302)
+Constant	Constant	0.143***	0.127***	-0.053
+		(0.010)	(0.027)	(0.279)
+				
+Observations		46,957	46,957	46,957
+Type		Linear	Interaction	Quadratic
+mean		0.105	0.105	0.105
+N		46957	46957	46957
+Robust standard errors in parentheses				
+*** p<0.01, ** p<0.05, * p<0.1				
